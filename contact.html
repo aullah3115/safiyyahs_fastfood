@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="/styles/app.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
   </head>
   <body>
     <nav class="top-nav">
@@ -12,6 +13,25 @@
     </nav>
     <div class="main-container">
       <h1 class="main-heading">contact</h1>
+      <form class="contact-form" method="post">
+        <label for="email">Your email</label>
+        <input 
+          type="email"
+          name="email"
+          placeholder="example@domain.com"
+          required
+        >
+        <label for="select">Choose a topic</label>
+        <select name="select">
+          <option value="bug">report bug</option>
+          <option value="complaint">report concern</option>
+          <option value="feedback">provide feedback</option>
+        </select>
+        <label for="text">Your message</label>
+        <textarea name="text"></textarea>
+        <input type="password" />
+        <input type="submit" value="Submit form"/>
+      </form>
     </div>
     <footer>
       <p>TM & copyright 2021 Safiyyah's FastFoods. All right reserved.</p>
